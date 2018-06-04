@@ -1,4 +1,4 @@
-package main_test
+package hello
 
 import (
 	"testing"
@@ -6,7 +6,6 @@ import (
 	"reflect"
 
 	"github.com/aws/aws-lambda-go/events"
-	main "github.com/unders/golambda/func/hello"
 )
 
 func TestHandler(t *testing.T) {
@@ -27,13 +26,13 @@ func TestHandler(t *testing.T) {
 			// when no name is provided in the HTTP body
 			request: events.APIGatewayProxyRequest{Body: ""},
 			want:    "",
-			err:     main.ErrNameNotProvided,
+			err:     errNameNotProvided,
 		},
 	}
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			response, err := main.Hello(test.request)
+			response, err := Handler(test.request)
 			if test.err != err {
 				t.Errorf("\nWant: %s\n Got: %s\n", test.err, err)
 			}
