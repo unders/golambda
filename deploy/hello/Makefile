@@ -12,11 +12,12 @@ help:
 	@echo ""
 	@echo "Commands:"
 	@echo "    make build            # build function"
-	@echo "    make check           # checks function: $(FUNC)"
+	@echo "    make check            # checks function: $(FUNC)"
+	@echo "    make clean            # remove build artifacts"
 	@echo ""
 
 .PHONY: build
-build: # test lint
+build: # clean test lint
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 vgo build $(LDFLAGS)
 	zip deployment.zip hello
 
@@ -24,6 +25,11 @@ build: # test lint
 check:
 	curl -XPOST -d "world" "$(FUNC)"
 	curl -XPOST -d "Anders" "$(FUNC)"
+
+.PHONY: clean
+clean:
+	rm hello
+	rm deployment.zip
 
 ##
 ##  Private
