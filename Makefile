@@ -9,8 +9,9 @@ help:
 .PHONY: install
 install:
 	# go get -u golang.org/x/vgo
-	go get github.com/awslabs/goformation
-	go get github.com/aws/aws-lambda-go
+	# go get github.com/awslabs/goformation
+	go get -u github.com/alecthomas/gometalinter
+	gometalinter --install
 
 .PHONY: log
 log:

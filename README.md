@@ -13,6 +13,9 @@ Go Lambda Functions
 ### API Gateway
 * [api-gateway-create-api-as-simple-proxy-for-lambda](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html#api-gateway-create-api-as-simple-proxy-for-lambda-build)
 
+### AWS CLI
+* [AWS Command Line Interface](https://aws.amazon.com/cli/)
+
 ### Pipeline
 * [codepipeline](https://aws.amazon.com/codepipeline/)
 * [Deploying Lambda-based Applications](https://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html)
