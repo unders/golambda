@@ -2,14 +2,13 @@
 Go Lambda Functions
 
 ## Lambdas
-    * [hello](https://github.com/unders/golambda/tree/master/deploy/hello)
+ * [hello](https://github.com/unders/golambda/tree/master/deploy/hello)
 
 ## Manually install
-    * [Go](https://golang.org/doc/install)
-    * [Python 2.6.5 or higher](https://www.python.org/downloads/)
-    * [pip](https://pip.pypa.io/en/latest/)
-    * pip install awscli
-
+ * [Go](https://golang.org/doc/install)
+ * [Python 2.6.5 or higher](https://www.python.org/downloads/)
+ * [pip](https://pip.pypa.io/en/latest/)
+ * pip install awscli
 
 ## Doc
 
