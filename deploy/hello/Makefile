@@ -59,8 +59,8 @@ role/open:
 
 .PHONY: clean
 clean:
-	rm hello
-	rm deployment.zip
+	@if [ -f hello ]; then rm hello; fi;
+	@if [ -f deployment.zip ]; then rm deployment.zip; fi;
 
 ##
 ##  Private
