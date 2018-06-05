@@ -26,6 +26,7 @@ help:
 	@echo "    make build            # build function"
 	@echo "    make create           # create lambda function"
 	@echo "    make check            # checks function: $(FUNC)"
+	@echo "    make role/open        # open aws roles in web browser"
 	@echo "    make clean            # remove build artifacts"
 	@echo ""
 
@@ -51,6 +52,10 @@ create: build
 check:
 	curl -XPOST -d "world" "$(FUNC)"
 	curl -XPOST -d "Anders" "$(FUNC)"
+
+.PHONY: role/open
+role/open:
+	@open https://console.aws.amazon.com/iam/home#/roles/Lambda?section=permissions
 
 .PHONY: clean
 clean:
