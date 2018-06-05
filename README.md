@@ -1,14 +1,17 @@
 # Go Lambda
 Go Lambda Functions
 
-## Manually install
- * [Go](https://golang.org/doc/install)
- * [Python 2.6.5 or higher](https://www.python.org/downloads/)
- * [pip](https://pip.pypa.io/en/latest/)
- * pip install awscli
+## Lambdas
+    * [hello](https://github.com/unders/golambda/tree/master/deploy/hello)
 
-### Lambdas
-* [hello](https://github.com/unders/golambda/tree/master/deploy/hello)
+## Manually install
+    * [Go](https://golang.org/doc/install)
+    * [Python 2.6.5 or higher](https://www.python.org/downloads/)
+    * [pip](https://pip.pypa.io/en/latest/)
+    * pip install awscli
+
+
+## Doc
 
 ### IAM
 * [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
