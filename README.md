@@ -1,11 +1,18 @@
 # Go Lambda
 Go Lambda Functions
 
+## Manually install
+ * [Go](https://golang.org/doc/install)
+ * [Python 2.6.5 or higher](https://www.python.org/downloads/)
+ * [pip](https://pip.pypa.io/en/latest/)
+ * pip install awscli
 
 ### IAM
 * [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ### Lambda
+* [Best Practices](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)
+* [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
 * [What Is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 ### AWS Key Management Service
@@ -22,6 +29,7 @@ Go Lambda Functions
 
 ### AWS CLI
 * [AWS Command Line Interface](https://aws.amazon.com/cli/)
+* [How to create cli profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html)
 
 ### Pipeline
 * [codepipeline](https://aws.amazon.com/codepipeline/)
