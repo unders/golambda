@@ -32,7 +32,7 @@ func (l Lambda) Handler(request events.APIGatewayProxyRequest) (events.APIGatewa
 	}
 
 	return events.APIGatewayProxyResponse{
-		Body:       "Hello " + request.Body,
+		Body:       "Hello " + request.Body + "\n",
 		StatusCode: 200,
 	}, nil
 }

@@ -16,7 +16,7 @@ ROLE=Lambda
 ##
 ## ENDPOINT
 ##
-FUNC=https://my-awesome-api.example.com/
+API=https://9ipt7e6fc5.execute-api.eu-central-1.amazonaws.com/staging/HelloFunction
 
 .PHONY: help
 help:
@@ -38,7 +38,6 @@ build: clean test lint
 .PHONY: create
 create: build
 	aws lambda create-function \
-		--region us-west-1 \
 		--function-name HelloFunction \
 		--zip-file fileb://./deployment.zip \
 		--runtime go1.x \
@@ -50,8 +49,10 @@ create: build
 
 .PHONY: check
 check:
-	curl -XPOST -d "world" "$(FUNC)"
-	curl -XPOST -d "Anders" "$(FUNC)"
+	curl -XPOST -d "world" "$(API)"
+	@echo ""
+	curl -XPOST -d "Anders" "$(API)"
+	@echo ""
 
 .PHONY: role/open
 role/open:

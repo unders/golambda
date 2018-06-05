@@ -7,6 +7,9 @@ Go Lambda Functions
  * [pip](https://pip.pypa.io/en/latest/)
  * pip install awscli
 
+### Lambdas
+* [hello](https://github.com/unders/golambda/tree/master/deploy/hello)
+
 ### IAM
 * [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
