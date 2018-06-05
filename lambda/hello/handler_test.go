@@ -3,12 +3,16 @@ package hello
 import (
 	"testing"
 
-	"reflect"
-
 	"github.com/aws/aws-lambda-go/events"
 )
 
-func TestHandler(t *testing.T) {
+func TestLambda_Handler(t *testing.T) {
+	lambda := Lambda{
+		Version:    "1",
+		BuildStamp: "Tis Jun 5",
+		Githash:    "18b6d0e7f7",
+	}
+
 	tests := []struct {
 		request events.APIGatewayProxyRequest
 		want    string
@@ -32,11 +36,11 @@ func TestHandler(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run("", func(t *testing.T) {
-			response, err := Handler(test.request)
+			response, err := lambda.Handler(test.request)
 			if test.err != err {
 				t.Errorf("\nWant: %s\n Got: %s\n", test.err, err)
 			}
-			if !reflect.DeepEqual(test.want, response.Body) {
+			if test.want != response.Body {
 				t.Errorf("\nWant: %s\n Got: %s\n", test.want, response.Body)
 			}
 		})

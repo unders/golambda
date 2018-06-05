@@ -8,7 +8,7 @@ help:
 
 .PHONY: test
 test:
-	vgo test
+	vgo test ./...
 
 .PHONY: lint
 lint:
@@ -16,7 +16,7 @@ lint:
 	gometalinter \
 		--enable-all \
 		--deadline=300s \
-		--line-length=100 \
+		--line-length=105 \
 		./...
 
 

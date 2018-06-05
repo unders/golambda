@@ -2,8 +2,15 @@
 Go Lambda Functions
 
 
+### IAM
+* [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+
 ### Lambda
 * [What Is AWS Lambda?](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+
+### AWS Key Management Service
+* [Overview](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+* [Getting Started](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
 
 ### AWS Services
 * [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
